@@ -97,3 +97,31 @@ bool CodeOptimizer::saveOptimizedCode(const std::string& filename) {
     }
 
     std::ofstream file(filename);
+    if (!file.is_open()) {
+        std::cerr << "Error: Could not open file " << filename << " for writing" << std::endl;
+        return false;
+    }
+
+    try {
+        file << ast->toString();
+        return true;
+    } catch (const std::exception& e) {
+        std::cerr << "Error while saving optimized code: " << e.what() << std::endl;
+        return false;
+    }
+}
+
+void CodeOptimizer::constantFolding() {
+    // Constant folding is now handled by the AST nodes themselves
+    // This method is kept for future extensions
+}
+
+void CodeOptimizer::deadCodeElimination() {
+    // Dead code elimination is now handled by the AST nodes themselves
+    // This method is kept for future extensions
+}
+
+void CodeOptimizer::optimizeArithmetic() {
+    // Arithmetic optimization is now handled by the AST nodes themselves
+    // This method is kept for future extensions
+}
