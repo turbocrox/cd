@@ -50,3 +50,19 @@ int Parser::parseNumber() {
     }
     return result;
 }
+.ExpressionPtr Parser::parseFactor() {
+    skipWhitespace();
+    if (isDigit(peek())) {
+        return std::make_shared<Constant>(parseNumber());
+    } else if (peek() == '(') {
+        advance();
+        auto expr = parseExpression();
+        if (!match(')')) {
+            throw std::runtime_error("Expected ')'");
+        }
+        return expr;
+    } else if (isAlpha(peek())) {
+        return std::make_shared<VariableReference>(parseIdentifier());
+    }
+    throw std::runtime_error("Unexpected token in factor: " + std::string(1, peek()));
+}
