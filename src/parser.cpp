@@ -34,3 +34,19 @@ bool Parser::isAlpha(char c) const {
 bool Parser::isAlphaNumeric(char c) const {
     return isAlpha(c) || isDigit(c);
 }
+
+std::string Parser::parseIdentifier() {
+    std::string result;
+    while (isAlphaNumeric(peek())) {
+        result += advance();
+    }
+    return result;
+}
+
+int Parser::parseNumber() {
+    int result = 0;
+    while (isDigit(peek())) {
+        result = result * 10 + (advance() - '0');
+    }
+    return result;
+}
