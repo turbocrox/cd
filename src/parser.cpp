@@ -66,3 +66,20 @@ int Parser::parseNumber() {
     }
     throw std::runtime_error("Unexpected token in factor: " + std::string(1, peek()));
 }
+ExpressionPtr Parser::parseTerm() {
+    auto left = parseFactor();
+    skipWhitespace();
+    
+    while (peek() == '*' || peek() == '/') {
+        char op = advance();
+        auto right = parseFactor();
+        if (op == '*') {
+            left = std::make_shared<BinaryOperation>(BinaryOperation::Operation::Multiply, left, right);
+        } else {
+            left = std::make_shared<BinaryOperation>(BinaryOperation::Operation::Divide, left, right);
+        }
+        skipWhitespace();
+    }
+    
+    return left;
+}
