@@ -81,5 +81,5 @@ ExpressionPtr Parser::parseTerm() {
         skipWhitespace();
     }
     
-    return left;
+   return left;
 }
