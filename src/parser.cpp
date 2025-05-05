@@ -102,3 +102,22 @@ ExpressionPtr Parser::parseExpression() {
     
     return left;
 }
+
+StatementPtr Parser::parseStatement() {
+    skipWhitespace();
+    
+    if (source.substr(pos, 3) == "int") {
+        pos += 3;
+        skipWhitespace();
+        std::string name = parseIdentifier();
+        skipWhitespace();
+        if (!match('=')) {
+            throw std::runtime_error("Expected '=' after variable declaration");
+        }
+        auto expr = parseExpression();
+        if (!match(';')) {
+            throw std::runtime_error("Expected ';' after expression");
+        }
+        return std::make_shared<VariableDeclaration>(name, expr);
+    }
+}
