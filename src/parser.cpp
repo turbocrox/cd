@@ -119,5 +119,16 @@ StatementPtr Parser::parseStatement() {
             throw std::runtime_error("Expected ';' after expression");
         }
         return std::make_shared<VariableDeclaration>(name, expr);
+    }else if (source.substr(pos, 6) == "return") {
+        pos += 6;
+        skipWhitespace();
+        auto expr = parseExpression();
+        if (!match(';')) {
+            throw std::runtime_error("Expected ';' after return statement");
+        }
+        return std::make_shared<ReturnStatement>(expr);
     }
+    
+    throw std::runtime_error("Unexpected statement: " + source.substr(pos, 10));
 }
+
