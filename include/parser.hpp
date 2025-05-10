@@ -1,17 +1,31 @@
-#include "parser.hpp"
-#include <stdexcept>
-#include <iostream>
+#pragma once
 
-char Parser::peek() const {
-    return pos < source.length() ? source[pos] : '\0';
-}
+#include "ast.hpp"
+#include <string>
+#include <vector>
+#include <memory>
 
-char Parser::advance() {
-    return pos < source.length() ? source[pos++] : '\0';
-}
+class Parser {
+public:
+    Parser(const std::string& source) : source(source), pos(0) {}
 
-void Parser::skipWhitespace() {
-    while (peek() == ' ' || peek() == '\t' || peek() == '\n' || peek() == '\r') {
-        advance();
-    }
-}
+    std::shared_ptr<FunctionDefinition> parseFunction();
+    StatementPtr parseStatement();
+    ExpressionPtr parseExpression();
+    ExpressionPtr parseTerm();
+    ExpressionPtr parseFactor();
+
+private:
+    std::string source;
+    size_t pos;
+
+    char peek() const;
+    char advance();
+    void skipWhitespace();
+    bool match(char expected);
+    bool isDigit(char c) const;
+    bool isAlpha(char c) const;
+    bool isAlphaNumeric(char c) const;
+    std::string parseIdentifier();
+    int parseNumber();
+}; 

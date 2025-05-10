@@ -1,18 +1,28 @@
 cmake_minimum_required(VERSION 3.10)
-project(CodeOptimizer)
+project(code_optimizer VERSION 0.1.0)
 
+# Configure compiler
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# Add compiler warnings
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
 # Add source files
-add_executable(code_optimizer
-    src/main.cpp
-    src/optimizer.cpp
+set(SOURCES
     src/parser.cpp
+    src/ast.cpp
+    src/optimizer.cpp
+    src/main.cpp
 )
 
-# Include directories
-target_include_directories(code_optimizer PRIVATE include)
+# Create executable
+add_executable(${PROJECT_NAME} ${SOURCES})
+target_include_directories(${PROJECT_NAME} PRIVATE include)
 
-# Add compiler flags for optimization
-target_compile_options(code_optimizer PRIVATE -O2 -Wall -Wextra) 
+# Install targets
+install(TARGETS ${PROJECT_NAME}
+    RUNTIME DESTINATION bin) 

@@ -6,7 +6,8 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d345857963311c344a90.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10"
@@ -27,7 +28,7 @@
 					[
 						0
 					],
-					"name" : "CodeOptimizer",
+					"name" : "code_optimizer",
 					"targetIndexes" : 
 					[
 						0
@@ -39,7 +40,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "code_optimizer::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-code_optimizer-Debug-8844cb521ff57d3b3317.json",
+					"jsonFile" : "target-code_optimizer-Debug-88ec5eba686ab96f4954.json",
 					"name" : "code_optimizer",
 					"projectIndex" : 0
 				}

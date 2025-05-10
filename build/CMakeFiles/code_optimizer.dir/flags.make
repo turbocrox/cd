@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/adi/Desktop/pblcd/include
 
-CXX_FLAGS = -g -std=gnu++17 -O2 -Wall -Wextra
+CXX_FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic
 

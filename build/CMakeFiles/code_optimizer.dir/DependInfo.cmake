@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/adi/Desktop/pblcd/src/ast.cpp" "CMakeFiles/code_optimizer.dir/src/ast.cpp.o" "gcc" "CMakeFiles/code_optimizer.dir/src/ast.cpp.o.d"
   "/home/adi/Desktop/pblcd/src/main.cpp" "CMakeFiles/code_optimizer.dir/src/main.cpp.o" "gcc" "CMakeFiles/code_optimizer.dir/src/main.cpp.o.d"
   "/home/adi/Desktop/pblcd/src/optimizer.cpp" "CMakeFiles/code_optimizer.dir/src/optimizer.cpp.o" "gcc" "CMakeFiles/code_optimizer.dir/src/optimizer.cpp.o.d"
   "/home/adi/Desktop/pblcd/src/parser.cpp" "CMakeFiles/code_optimizer.dir/src/parser.cpp.o" "gcc" "CMakeFiles/code_optimizer.dir/src/parser.cpp.o.d"

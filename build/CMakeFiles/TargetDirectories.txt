@@ -1,3 +1,7 @@
 /home/adi/Desktop/pblcd/build/CMakeFiles/code_optimizer.dir
 /home/adi/Desktop/pblcd/build/CMakeFiles/edit_cache.dir
 /home/adi/Desktop/pblcd/build/CMakeFiles/rebuild_cache.dir
+/home/adi/Desktop/pblcd/build/CMakeFiles/list_install_components.dir
+/home/adi/Desktop/pblcd/build/CMakeFiles/install.dir
+/home/adi/Desktop/pblcd/build/CMakeFiles/install/local.dir
+/home/adi/Desktop/pblcd/build/CMakeFiles/install/strip.dir
