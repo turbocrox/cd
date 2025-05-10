@@ -73,43 +73,43 @@ CMakeFiles/code_optimizer.dir/src/main.cpp.o: CMakeFiles/code_optimizer.dir/flag
 CMakeFiles/code_optimizer.dir/src/main.cpp.o: /home/adi/Desktop/pblcd/src/main.cpp
 CMakeFiles/code_optimizer.dir/src/main.cpp.o: CMakeFiles/code_optimizer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adi/Desktop/pblcd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/code_optimizer.dir/src/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/code_optimizer.dir/src/main.cpp.o -MF CMakeFiles/code_optimizer.dir/src/main.cpp.o.d -o CMakeFiles/code_optimizer.dir/src/main.cpp.o -c /home/adi/Desktop/pblcd/src/main.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/code_optimizer.dir/src/main.cpp.o -MF CMakeFiles/code_optimizer.dir/src/main.cpp.o.d -o CMakeFiles/code_optimizer.dir/src/main.cpp.o -c /home/adi/Desktop/pblcd/src/main.cpp
 
 CMakeFiles/code_optimizer.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/code_optimizer.dir/src/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/Desktop/pblcd/src/main.cpp > CMakeFiles/code_optimizer.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/Desktop/pblcd/src/main.cpp > CMakeFiles/code_optimizer.dir/src/main.cpp.i
 
 CMakeFiles/code_optimizer.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/code_optimizer.dir/src/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/Desktop/pblcd/src/main.cpp -o CMakeFiles/code_optimizer.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/Desktop/pblcd/src/main.cpp -o CMakeFiles/code_optimizer.dir/src/main.cpp.s
 
 CMakeFiles/code_optimizer.dir/src/optimizer.cpp.o: CMakeFiles/code_optimizer.dir/flags.make
 CMakeFiles/code_optimizer.dir/src/optimizer.cpp.o: /home/adi/Desktop/pblcd/src/optimizer.cpp
 CMakeFiles/code_optimizer.dir/src/optimizer.cpp.o: CMakeFiles/code_optimizer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adi/Desktop/pblcd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/code_optimizer.dir/src/optimizer.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/code_optimizer.dir/src/optimizer.cpp.o -MF CMakeFiles/code_optimizer.dir/src/optimizer.cpp.o.d -o CMakeFiles/code_optimizer.dir/src/optimizer.cpp.o -c /home/adi/Desktop/pblcd/src/optimizer.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/code_optimizer.dir/src/optimizer.cpp.o -MF CMakeFiles/code_optimizer.dir/src/optimizer.cpp.o.d -o CMakeFiles/code_optimizer.dir/src/optimizer.cpp.o -c /home/adi/Desktop/pblcd/src/optimizer.cpp
 
 CMakeFiles/code_optimizer.dir/src/optimizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/code_optimizer.dir/src/optimizer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/Desktop/pblcd/src/optimizer.cpp > CMakeFiles/code_optimizer.dir/src/optimizer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/Desktop/pblcd/src/optimizer.cpp > CMakeFiles/code_optimizer.dir/src/optimizer.cpp.i
 
 CMakeFiles/code_optimizer.dir/src/optimizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/code_optimizer.dir/src/optimizer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/Desktop/pblcd/src/optimizer.cpp -o CMakeFiles/code_optimizer.dir/src/optimizer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/Desktop/pblcd/src/optimizer.cpp -o CMakeFiles/code_optimizer.dir/src/optimizer.cpp.s
 
 CMakeFiles/code_optimizer.dir/src/parser.cpp.o: CMakeFiles/code_optimizer.dir/flags.make
 CMakeFiles/code_optimizer.dir/src/parser.cpp.o: /home/adi/Desktop/pblcd/src/parser.cpp
 CMakeFiles/code_optimizer.dir/src/parser.cpp.o: CMakeFiles/code_optimizer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adi/Desktop/pblcd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/code_optimizer.dir/src/parser.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/code_optimizer.dir/src/parser.cpp.o -MF CMakeFiles/code_optimizer.dir/src/parser.cpp.o.d -o CMakeFiles/code_optimizer.dir/src/parser.cpp.o -c /home/adi/Desktop/pblcd/src/parser.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/code_optimizer.dir/src/parser.cpp.o -MF CMakeFiles/code_optimizer.dir/src/parser.cpp.o.d -o CMakeFiles/code_optimizer.dir/src/parser.cpp.o -c /home/adi/Desktop/pblcd/src/parser.cpp
 
 CMakeFiles/code_optimizer.dir/src/parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/code_optimizer.dir/src/parser.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/Desktop/pblcd/src/parser.cpp > CMakeFiles/code_optimizer.dir/src/parser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adi/Desktop/pblcd/src/parser.cpp > CMakeFiles/code_optimizer.dir/src/parser.cpp.i
 
 CMakeFiles/code_optimizer.dir/src/parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/code_optimizer.dir/src/parser.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/Desktop/pblcd/src/parser.cpp -o CMakeFiles/code_optimizer.dir/src/parser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adi/Desktop/pblcd/src/parser.cpp -o CMakeFiles/code_optimizer.dir/src/parser.cpp.s
 
 # Object files for target code_optimizer
 code_optimizer_OBJECTS = \

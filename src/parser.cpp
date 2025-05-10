@@ -132,3 +132,36 @@ StatementPtr Parser::parseStatement() {
     throw std::runtime_error("Unexpected statement: " + source.substr(pos, 10));
 }
 
+
+std::shared_ptr<FunctionDefinition> Parser::parseFunction() {
+    skipWhitespace();
+    if (source.substr(pos, 3) != "int") {
+        throw std::runtime_error("Expected 'int' at start of function");
+    }
+    pos += 3;
+    skipWhitespace();
+    
+    std::string name = parseIdentifier();
+    skipWhitespace();
+    
+    if (!match('(') || !match(')')) {
+        throw std::runtime_error("Expected '()' after function name");
+    }
+    skipWhitespace();
+    
+    if (!match('{')) {
+        throw std::runtime_error("Expected '{' after function declaration");
+    }
+    
+    std::vector<StatementPtr> body;
+    while (peek() != '}') {
+        body.push_back(parseStatement());
+        skipWhitespace();
+    }
+    
+    if (!match('}')) {
+        throw std::runtime_error("Expected '}' at end of function");
+    }
+    
+    return std::make_shared<FunctionDefinition>(name, body);
+} 
