@@ -847,7 +847,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "code_optimizer"
+			"value" : "CodeOptimizer"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",

@@ -97,6 +97,7 @@ bool CodeOptimizer::saveOptimizedCode(const std::string& filename) {
     }
 
     std::ofstream file(filename);
+    
     if (!file.is_open()) {
         std::cerr << "Error: Could not open file " << filename << " for writing" << std::endl;
         return false;

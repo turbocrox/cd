@@ -15,6 +15,7 @@ void Parser::skipWhitespace() {
         advance();
     }
 }
+
 bool Parser::match(char expected) {
     if (peek() == expected) {
         advance();
@@ -32,7 +33,7 @@ bool Parser::isAlpha(char c) const {
 }
 
 bool Parser::isAlphaNumeric(char c) const {
-    return isAlpha(c) || isDigit(c);
+    return isAlpha(c) || isDigit(c);
 }
 
 std::string Parser::parseIdentifier() {
@@ -48,9 +49,10 @@ int Parser::parseNumber() {
     while (isDigit(peek())) {
         result = result * 10 + (advance() - '0');
     }
-    return result;
+    return result;
 }
-.ExpressionPtr Parser::parseFactor() {
+
+ExpressionPtr Parser::parseFactor() {
     skipWhitespace();
     if (isDigit(peek())) {
         return std::make_shared<Constant>(parseNumber());
@@ -64,7 +66,7 @@ int Parser::parseNumber() {
     } else if (isAlpha(peek())) {
         return std::make_shared<VariableReference>(parseIdentifier());
     }
-    throw std::runtime_error("Unexpected token in factor: " + std::string(1, peek()));
+    throw std::runtime_error("Unexpected token in factor: " + std::string(1, peek()));
 }
 
 ExpressionPtr Parser::parseTerm() {
@@ -82,7 +84,7 @@ ExpressionPtr Parser::parseTerm() {
         skipWhitespace();
     }
     
-   return left;
+    return left;
 }
 
 ExpressionPtr Parser::parseExpression() {
@@ -119,7 +121,7 @@ StatementPtr Parser::parseStatement() {
             throw std::runtime_error("Expected ';' after expression");
         }
         return std::make_shared<VariableDeclaration>(name, expr);
-    }else if (source.substr(pos, 6) == "return") {
+    } else if (source.substr(pos, 6) == "return") {
         pos += 6;
         skipWhitespace();
         auto expr = parseExpression();
@@ -129,9 +131,8 @@ StatementPtr Parser::parseStatement() {
         return std::make_shared<ReturnStatement>(expr);
     }
     
-    throw std::runtime_error("Unexpected statement: " + source.substr(pos, 10));
+    throw std::runtime_error("Unexpected statement: " + source.substr(pos, 10));
 }
-
 
 std::shared_ptr<FunctionDefinition> Parser::parseFunction() {
     skipWhitespace();

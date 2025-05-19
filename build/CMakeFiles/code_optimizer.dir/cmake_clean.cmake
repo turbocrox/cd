@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/code_optimizer.dir/src/ast.cpp.o"
-  "CMakeFiles/code_optimizer.dir/src/ast.cpp.o.d"
   "CMakeFiles/code_optimizer.dir/src/main.cpp.o"
   "CMakeFiles/code_optimizer.dir/src/main.cpp.o.d"
   "CMakeFiles/code_optimizer.dir/src/optimizer.cpp.o"
