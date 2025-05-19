@@ -1,5 +1,5 @@
 int main() {
-    int x = 29;
+    int x = 31;
     int y = 14;
     int z = (x + y);
     int w = 12;
