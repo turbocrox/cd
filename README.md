@@ -132,10 +132,3 @@ int main() {
    - Check that your compiler version is compatible
    - Verify that all source files are present
 
-## Contributing
-
-Please refer to `CONTRIBUTORS.md` for information about contributing to this project.
-
-## License
-
-[Add your license information here] 
