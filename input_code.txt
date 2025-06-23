@@ -1,0 +1,16 @@
+int main() {
+    int a = 6;
+    int b = 2;
+    int i = 0;
+    int result = 0;
+
+    while (i < 8) {
+        int temp = a * b;      // loop-invariant
+        int doubleI = i * 2;   // strength reduction possible
+        int unused = 999;      // dead code
+        result = result + temp + doubleI;
+        i = i + 1;
+    }
+
+    return result;
+}

@@ -1,0 +1,14 @@
+function main:
+i = 0
+result = 0
+t1 = i LT 8
+t2 = 12
+temp = t2
+t3 = 0
+doubleI = t3
+i = t6
+ifFalse t1 goto L2
+t4 = result + temp
+t5 = t4 + doubleI
+result = t5
+goto L1

@@ -1,0 +1,1 @@
+{unused: int, doubleI: int, a: int, temp: int, b: int, i: int, result: int}

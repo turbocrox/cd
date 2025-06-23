@@ -1,0 +1,22 @@
+function main:
+a = 6
+b = 2
+i = 0
+result = 0
+L1:
+t1 = i LT 8
+ifFalse t1 goto L2
+t2 = a * b
+temp = t2
+t3 = i * 2
+doubleI = t3
+unused = 999
+t4 = result + temp
+t5 = t4 + doubleI
+result = t5
+t6 = i + 1
+i = t6
+goto L1
+L2:
+return result
+end function main
